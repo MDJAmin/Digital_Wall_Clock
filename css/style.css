@@ -78,3 +78,90 @@ transform: translateY(1px);
     text-shadow: 0 0 10px rgb(179, 255, 0);
     transform: rotate(calc(var(--index) * -30deg));
 }
+
+
+.hand-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hand-box .hand {
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hand-box .hand i {
+display: inline-block;
+transform-origin: bottom;
+border-radius: 50%;
+box-shadow: 0 0 10px rgb(179, 255, 0);
+}
+
+.hand-box .hours {
+    width: 320px;
+    height: 320px;
+    /* transform: rotate(40deg); */
+    /* border: 2px solid red; */
+}
+
+.hand-box .hours i {
+ width: 8px;
+ height: 160px;
+ background: rgb(179, 255, 0);
+}
+
+.hand-box .minutes {
+    width: 450px;
+    height: 450px;
+    /* transform: rotate(230deg); */
+    /* border: 2px solid rgb(187, 255, 0); */
+}
+
+.hand-box .minutes::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background: rgb(179, 255, 0) ;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(179, 255, 0);
+}
+
+.hand-box .minutes i {
+    width: 8px;
+    height: 225px;
+    background:rgb(179, 255, 0);
+
+   }
+   
+.hand-box .seconds {
+    width: 480px;
+    height: 480px;
+    /* transform: rotate(160deg); */
+    /* border: 2px solid rgb(85, 0, 255); */
+}
+
+
+.hand-box .seconds::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: rgb(179, 255, 0) ;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, -5);
+}
+
+.hand-box .seconds i {
+    width: 4px;
+    height: calc(240px + 70px);
+    background: rgb(255, 255, 255);
+   }
