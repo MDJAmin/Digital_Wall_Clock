@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   background: #081b29;
   overflow: hidden;
+  user-select: none;
 }
 
 .wrapper {
