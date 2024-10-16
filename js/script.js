@@ -1,3 +1,5 @@
+// Enjoy!!🍓
+
 "use strict";
 
 setInterval(getCurrentTime, 1000);
