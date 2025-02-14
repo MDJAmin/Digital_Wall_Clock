@@ -32,9 +32,8 @@ function getCurrentTime() {
   let CurrentMinutes = date.getMinutes();
   let Currentseconds = date.getSeconds();
 
-  handHours.style.transform = `rotate(${
-    CurrentHours * 30 + CurrentMinutes / 2
-  }deg)`;
+  handHours.style.transform = `rotate(${CurrentHours * 30 + CurrentMinutes / 2
+    }deg)`;
   handMinutes.style.transform = `rotate(${CurrentMinutes * 6}deg)`;
   handSeconds.style.transform = `rotate(${Currentseconds * 6}deg)`;
 }
